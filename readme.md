@@ -38,7 +38,7 @@ Excecute the above command (with arguments) to train a source misinformation det
 ```bash
 python src/adapt.py --load_model_path=SOURCE_FOLDER --output_dir=TARGET_FOLDER --source_data_path=./data/Constraint --source_data_type=constraint --target_data_path=./data/CoAID --target_data_type=coaid --alpha=0.001 --conf_threshold=0.6;
 ```
-Excecute the above command (with arguments) to adapt the source model with CANMD. Specify load_model_path to load the source trained model, select both source and target datasets (i.e., source_data_path, source_data_type, target_data_path and target_data_type) from FEVER, GettingReal, GossipCop, LIAR, PHEME, CoAID, Constraint and ANTiVax. Adapted models could be found under ./experiments/defense/model-code/dataset-code/models/best_acc_model.pth. Alpha and conf_threshold are hyperparameters for CANMD and can be chosen empirically.
+Excecute the above command (with arguments) to adapt the source model with CANMD. Specify load_model_path to load the source trained model, select both source and target datasets (i.e., source_data_path, source_data_type, target_data_path and target_data_type) from FEVER, GettingReal, GossipCop, LIAR, PHEME, CoAID, Constraint and ANTiVax. Adapted models could be found under ./experiments/defense/model-code/dataset-code/models/best_acc_model.pth. Alpha (i.e., lambda in the contrastive loss) and conf_threshold (i.e., tau in confidence thresholding) are hyperparameters for CANMD and can be chosen empirically.
 
 
 ## Performance
