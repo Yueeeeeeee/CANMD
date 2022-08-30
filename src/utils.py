@@ -249,7 +249,7 @@ def get_corrected_psuedolabels_model(
     target_types, 
     target_paths,
     conf_threshold=0.6,
-    max_imbalance_multiplier=10):  # choose max_imbalance_multiplier from 5 to 20
+    max_imbalance_multiplier=20):  # choose max_imbalance_multiplier from 5 to 20
 
     def probs_not_usable(corrected_probs, val_labels):
         indices = np.array(corrected_probs).max(-1) >= conf_threshold

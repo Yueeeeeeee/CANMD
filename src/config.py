@@ -34,9 +34,9 @@ parser.add_argument("--train_target", action='store_true', help="Whether to only
 parser.add_argument("--val_size", default=0.1, type=float, help="Validation size from the dataset if not already split")
 parser.add_argument("--test_size", default=0.2, type=float, help="Test size from the dataset if not already split")
 
-parser.add_argument("--source_data_path", default='../UDA-COVID19Misinformation/data/LIAR', type=str, help="Source file for training. E.g., ./data/Constraint")
+parser.add_argument("--source_data_path", default='./data/LIAR', type=str, help="Source file for training. E.g., ./data/Constraint")
 parser.add_argument("--source_data_type", default='liar', type=str, help="Source file type for training. E.g., constraint")
-parser.add_argument("--target_data_path", default='../UDA-COVID19Misinformation/data/Constraint', type=str, help="Target file training for joint training")
+parser.add_argument("--target_data_path", default='./data/Constraint', type=str, help="Target file training for joint training")
 parser.add_argument("--target_data_type", default='constraint', type=str, help="Source file type for training. E.g., constraint")
 parser.add_argument("--load_model_path", default=None, type=str, help="Trained source model path for adaptation.")
 
