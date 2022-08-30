@@ -1,0 +1,12 @@
+*.pyc
+*.p
+*.pt
+*.pth
+.DS_Store
+
+/.ipynb_checkpoints/*
+/.vscode/*
+/experiments/*
+/experiments_bert/*
+
+/data/*
